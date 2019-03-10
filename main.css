@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 50px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* Hero styling */
+.hero {
+    margin-top: 50px;
+    padding: 0 0;
+    background-image: url("images/lady-lineart.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 550px;
+}
+
+.bio {
+    max-width: 480px;
+    height: 550px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 75px;
+}
+
+h1 {
+    line-height: 0;
+}
+
+span {
+    padding-left: 20px;
+    color: #8B8C8C;
+    font-size: 30px;
+}
+
+.pronunciation {
+    color: #8B8C8C;
+}
+
+/* Project section styling */
+section {
+    background-color: #BDBFBF;
+    padding: 6% 0;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+.projects {
+    background-color: white;
+    padding: 1% 0;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.logo {
+    height: 30px;
+    float: right;
+    padding-right: 5px;
+}
+
+.last {
+    padding-right: 20px;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.screenshot {
+    width: 100%;
+}
+
+/* Contact section styling */
+footer {
+    background-color: #8B8C8C;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.icon {
+    height: 30px;
+    float: center;
+    padding-right: 20px;
+}
