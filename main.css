@@ -3,15 +3,17 @@
 }
 
 body {
+    background-color: #F8F8F8;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    color: black;
+    color: #063443;
     margin: 0;
     padding: 0;
 }
 
 /* Navigation styling */
 nav {
-    background-color: white;
+    background-color: #F8F8F8;
     position: fixed;
     text-align: center;
     top: 0;
@@ -28,15 +30,16 @@ ul {
 
 li {
     margin-right: 20px;
+    font-size: 16px;
 }
 
 a:link {
-    color: black;
+    color: #086970;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: #086970;
     text-decoration: none;
 }
 
@@ -45,7 +48,7 @@ a:visited {
     margin-top: 50px;
     padding: 0 0;
     background-image: url("images/lady-lineart.png");
-    background-size: 70%;
+    background-size: 85%;
     background-repeat: no-repeat;
     background-position: right center;
     height: 550px;
@@ -61,57 +64,63 @@ a:visited {
 
 h1 {
     line-height: 0;
+    color: #063443;
+    font-family: 'Halant', serif;
+    font-weight: bold;
 }
 
 span {
     padding-left: 20px;
-    color: #8B8C8C;
+    color: #086970;
     font-size: 30px;
 }
 
 .pronunciation {
-    color: #8B8C8C;
+    color: #086970;
 }
 
 /* Project section styling */
 section {
-    background-color: #BDBFBF;
+    background-color: #F2F2F2;
     padding: 6% 0;
-    padding-right: 75px;
-    padding-left: 75px;
+}
+
+#projectOne {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    max-width: 480px;
 }
 
 .projects {
-    background-color: white;
-    padding: 1% 0;
-    padding-bottom: 40px;
     padding-left: 20px;
-}
-
-.logo {
-    height: 30px;
-    float: right;
-    padding-right: 5px;
-}
-
-.last {
-    padding-right: 20px;
-}
-
-button {
-    height: 30px;
-    width: 150px;
-    font-size: 15px;
-    font-weight: bold;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    line-height: .5;
+    font-size: 17px;
+    color: #063443;
 }
 
 .screenshot {
-    width: 100%;
+    max-width: 480px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.repo {
+    color: #086970;
+    display: block;
+    font-weight: bold;
+    background-color: #E6E6E6;
+    width: 42px;
 }
 
 /* Contact section styling */
 footer {
-    background-color: #8B8C8C;
+    background-color: #ECECEC;
     padding: 1% 0;
     text-align: center;
 }
@@ -120,4 +129,115 @@ footer {
     height: 30px;
     float: center;
     padding-right: 20px;
+}
+
+/* Smaller browser or large tablet */
+@media only screen and (max-width: 975px) {
+    .hero {
+        margin-top: 35px;
+        height: 475px;
+        background-image: url("images/lady-lineart-2.png");
+        background-size: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 25px;
+    }
+
+    .pronunciation {
+        font-size: 18px;
+    }
+}
+
+/* Smaller tablet and mobile sizes */
+@media only screen and (max-width: 700px) {
+    .hero {
+        background-image: none;
+        height: 350px;
+    }
+
+    .bio {
+        height: 350px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/* Most mobile sizes */
+@media only screen and (max-width: 525px) {
+    .bio {
+        max-width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 250px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .hero {
+        height: 250px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .pronunciation {
+        font-size: 13px;
+    }
+    
+    li {
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .screenshot {
+        max-width: 300px;
+    }
+
+    #projectOne {
+        max-width: 300px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .projects {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 1px;
+        line-height: 1;
+        font-size: 13px;
+    }
+
+    .repo{
+        font-size: 13px;
+        width: 33px;
+    }
+
+    .title {
+        line-height: 0px;
+    }
+
+    .icon {
+        height: 20px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
 }
