@@ -173,12 +173,12 @@ footer {
 /* Most mobile sizes */
 @media only screen and (max-width: 525px) {
     .bio {
-        max-width: 300px;
+        max-width: 375px;
         margin-left: 0px;
         margin-right: 0px;
         height: 250px;
-        padding-right: 30px;
         padding-left: 30px;
+
     }
 
     .hero {
@@ -186,7 +186,7 @@ footer {
     }
     
     .name {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     span {
@@ -195,7 +195,7 @@ footer {
     }
 
     .description {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .pronunciation {
@@ -243,6 +243,10 @@ footer {
 
 /* Smaller browser or large tablet */
 @media only screen and (max-width: 320px) {
+    .bio {
+        max-width: 300px;
+    }
+    
     .name {
         font-size: 20px;
     }
