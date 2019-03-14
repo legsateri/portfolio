@@ -130,10 +130,12 @@ body {
     .icon {
         height: 20px;
         padding-right: 20px;
+        justify-items: center;
     }
 
     footer {
         display: flex;
+        justify-content: center;
         background-color: #ECECEC;
         padding: 1% 0;
     }
@@ -232,7 +234,7 @@ body {
 }
 
 /* Styling for larger and larger browsers */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .hero {
         background-image: url("images/lady-lineart.png");
         background-size: 70%;
@@ -240,29 +242,20 @@ body {
    }
     
     .projects {
-        padding: 7% 0;
-        height: 1000px;
+        padding: 5% 0;
     }
 
     .bio {
         max-width: 750px;
     }
-    
-    .project-one {
-        max-width: 750px;
-    }
-
-    .screenshot {
-        max-width: 750px;
-    }
-
-    .bio h1 {
-        font-size: 40px;
-    }
 
     .hide {
         padding-left: 8px;
         font-size: 32px;
+    }
+
+    .bio h1 {
+        font-size: 40px;
     }
 
     .bio p {
