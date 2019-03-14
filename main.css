@@ -132,7 +132,7 @@ body {
 
     .icon {
         height: 20px;
-        padding-left: 5%;
+        padding-right: 20px;
     }
 }
 
@@ -251,10 +251,6 @@ body {
 
     .screenshot {
         max-width: 750px;
-    }
-
-    .icon {
-        height: 30px;
     }
 
     h1 {
