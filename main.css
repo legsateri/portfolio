@@ -1,278 +1,288 @@
+/* Styling for every screen size */
 * {
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
 }
 
-body {
-    background-color: #F8F8F8;
+body { 
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
     color: #063443;
+    background-color: #F8F8F8;
     margin: 0;
     padding: 0;
 }
 
-/* Navigation styling */
-nav {
-    background-color: #F8F8F8;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-height: 50px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    margin-right: 20px;
-    font-size: 16px;
-}
-
-a:link {
-    color: #086970;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #086970;
-    text-decoration: none;
-}
-
-/* Hero styling */
-.hero {
-    margin-top: 50px;
-    padding: 0 0;
-    background-image: url("images/lady-lineart.png");
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    height: 550px;
-}
-
-.bio {
-    max-width: 480px;
-    height: 550px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 75px;
-}
-
-h1 {
-    line-height: 0;
-    color: #063443;
-    font-family: 'Halant', serif;
-    font-weight: bold;
-}
-
-span {
-    padding-left: 20px;
-    color: #086970;
-    font-size: 30px;
-}
-
-.pronunciation {
-    color: #086970;
-}
-
-/* Project section styling */
-section {
-    background-color: #F2F2F2;
-    padding: 6% 0;
-}
-
-#projectOne {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    max-width: 480px;
-}
-
-.projects {
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-bottom: 1px;
-    line-height: .5;
-    font-size: 17px;
-    color: #063443;
-}
-
-.screenshot {
-    max-width: 480px;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.repo {
-    color: #086970;
-    display: block;
-    font-weight: bold;
-    background-color: #E6E6E6;
-    width: 42px;
-}
-
-/* Contact section styling */
-footer {
-    background-color: #ECECEC;
-    padding: 1% 0;
-    text-align: center;
-}
-
-.icon {
-    height: 30px;
-    float: center;
-    padding-right: 20px;
-}
-
-@media only screen and (max-width: 975px) {
-    .hero {
-        margin-top: 35px;
-        height: 475px;
-        background-image: url("images/lady-lineart-2.png");
-        background-size: 90%;
+/* Styling for smallest screen size */
+@media only screen and (min-width: 320px) {
+    .bio {
+        max-width: 300px;
+        height: 500px;
+        text-align: center;
+        position: relative;
+        display: block;
+        left: 0px;
+        right: 0px;
+        padding-top: 200px;
     }
 
-    .name {
-        font-size: 30px;
+    h1 {
+        font-family: 'Halant', serif;
+        font-size: 24px;
+        line-height: 0;
     }
 
-    .description {
-        font-size: 18px;
+    .hide {
+        display: none;
     }
 
-    span {
-        font-size: 25px;
+    p {
+        font-size: 15px;
     }
 
     .pronunciation {
-        font-size: 18px;
-    }
-}
-
-/* Smaller tablet and mobile sizes */
-@media only screen and (max-width: 700px) {
-    .hero {
-        background-image: none;
-        height: 350px;
+        color: #086970;
+        font-weight: bold;
     }
 
-    .bio {
-        height: 350px;
-        display: table-cell;
-        vertical-align: middle;
-    }
-}
-
-/* Most mobile sizes */
-@media only screen and (max-width: 525px) {
-    .bio {
-        max-width: 375px;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 250px;
-        padding-left: 30px;
-
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #F8F8F8;
+        border-top: 3px solid #ECECEC;
     }
 
-    .hero {
-        height: 250px;
-    }
-    
-    .name {
-        font-size: 23px;
-    }
-
-    span {
-        font-size: 16px;
-        padding-left: 10px;
+    ul {
+        list-style: none;
+        display: flex;
+        left: 0px;
+        right: 0px;
     }
 
-    .description {
-        font-size: 16px;
+    nav ul {
+        padding: 0;
     }
 
-    .pronunciation {
-        font-size: 13px;
-    }
-    
     li {
-        margin-right: 10px;
-        font-size: 13px;
+        font-size: 12px;
+        text-align: center;
     }
 
-    .screenshot {
-        max-width: 300px;
+    .typewriter {
+        height: 30px;
     }
 
-    #projectOne {
-        max-width: 300px;
-        padding-right: 0px;
-        padding-left: 0px;
+    a:link {
+        text-decoration: none;
+        font-weight: bold;
+        color: #541329;
+    }
+
+    a:visited {
+        color: #541329;
+        text-decoration: none;
     }
 
     .projects {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 1px;
-        line-height: 1;
-        font-size: 13px;
-    }
-
-    .repo{
-        font-size: 13px;
-        width: 33px;
+        padding: 28% 0;
+        margin: 0;
+        max-width: 100%;
+        background-color: #F2F2F2;
+        height: 568px;
     }
 
     .title {
         line-height: 0px;
+        font-weight: bold;
+    }
+
+    .screenshot {
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .repo p {
+        font-size: 12px;
+        font-weight: bold;
+        padding-bottom: 3%;
+    }
+
+    .project-one {
+        max-width: 300px;
+        background-color: white;
+        -webkit-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
+        -moz-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
+        box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
+    }
+
+    div p {
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        background-color: #ECECEC;
+        padding: 3% 0;
+        text-align: center;
     }
 
     .icon {
         height: 20px;
-        padding-right: 10px;
-        padding-top: 5px;
     }
 }
 
-/* Smaller browser or large tablet */
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 500px) {
     .bio {
-        max-width: 300px;
+        max-width: 450px;
     }
     
-    .name {
-        font-size: 20px;
+    .projects {
+        padding: 75px 0;
+        height: 700px;
     }
 
-    span {
+    .project-one {
+        max-width: 450px;
+    }
+
+    .screenshot {
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .bio p {
         font-size: 16px;
     }
 
-    .description {
-        font-size: 13px;
+    li {
+        font-size: 12px;
     }
 
-    .pronunciation {
-        font-size: 13px;
+    .project-one p {
+        font-size: 16px;
+    }
+
+    .repo p {
+        font-size: 12px;
+    }
+}
+
+/* Styling for tablets and small desktop browsers */
+@media only screen and (min-width: 700px) {
+   .hero {
+        background-image: url("images/lady-lineart-2.png");
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center; 
+   }
+   
+    .bio {
+        height: 475px;
+        padding-top: 0px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 75px;
     }
     
-    li {
-        margin-right: 10px;
-        font-size: 13px;
+    h1 {
+        text-align: left;
+    }
+
+    .bio p {
+        text-align: left;
     }
 
     .projects {
-        font-size: 13px;
+        padding: 12% 0;
     }
 
-    .repo {
-        font-size: 13px;
+    .project-one p {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .icon {
+        height: 30px;
+    }
+
+    .hide {
+        display: inline;
+        padding-left: 5px;
+        font-size: 26px;
+        color: #086970;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .projects {
+        padding: 9% 0;
+    }
+}
+
+/* Styling for larger and larger browsers */
+@media only screen and (min-width: 1200px) {
+    .hero {
+        background-image: url("images/lady-lineart.png");
+        background-size: 70%;
+        background-position: right; 
+   }
+    
+    .projects {
+        padding: 7% 0;
+        height: 1000px;
+    }
+
+    .bio {
+        max-width: 750px;
+    }
+    
+    .project-one {
+        max-width: 750px;
+    }
+
+    .screenshot {
+        max-width: 750px;
+    }
+
+    .icon {
+        height: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .hide {
+        padding-left: 8px;
+        font-size: 32px;
+    }
+
+    .bio p {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .typewriter {
+        height: 40px;
+    }
+
+    .project-one p {
+        font-size: 20px;
+    }
+
+    .repo p {
+        font-size: 16px;
     }
 }
