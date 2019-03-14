@@ -128,11 +128,11 @@ body {
         display: flex;
         background-color: #ECECEC;
         padding: 3% 0;
-        justify-content: space-evenly;
     }
 
     .icon {
         height: 20px;
+        padding-left: 5%;
     }
 }
 
