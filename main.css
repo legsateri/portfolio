@@ -15,7 +15,7 @@ body {
 }
 
 /* Styling for smallest screen size */
-@media only screen and (max-width: 499px) {
+@media only screen and (min-width: 499px) {
     .bio {
         max-width: 300px;
         height: 500px;
@@ -139,7 +139,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 699px) {
+@media only screen and (min-width: 500px) {
     .bio {
         max-width: 450px;
     }
@@ -179,7 +179,7 @@ body {
 }
 
 /* Styling for tablets and small desktop browsers */
-@media only screen and (max-width: 899px) {
+@media only screen and (min-width: 700px) {
    .hero {
         background-image: url("images/lady-lineart-2.png");
         background-size: 90%;
@@ -225,7 +225,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 900px) {
     .projects {
         padding: 9% 0;
     }
