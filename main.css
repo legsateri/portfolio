@@ -127,12 +127,12 @@ body {
     footer {
         display: flex;
         background-color: #ECECEC;
+        text-align: center;
         padding: 3% 0;
     }
 
     .icon {
         height: 20px;
-        padding-right: 20px;
     }
 }
 
