@@ -51,7 +51,6 @@ body {
         margin-right: auto;
         position: sticky;
         top: 0;
-        padding: 5px;
         background-color: #F8F8F8;
         border-top: 3px solid #ECECEC;
     }
@@ -70,6 +69,10 @@ body {
     li {
         font-size: 12px;
         text-align: center;
+    }
+
+    .nav-option {
+        margin-top: 10px;
     }
 
     .typewriter {
@@ -124,16 +127,15 @@ body {
         text-align: center;
     }
 
-    footer {
-        display: flex;
-        background-color: #ECECEC;
-        justify-content: center;
-        padding: 3% 0;
-    }
-
     .icon {
         height: 20px;
         padding-right: 20px;
+    }
+
+    footer {
+        display: flex;
+        background-color: #ECECEC;
+        padding: 1% 0;
     }
 }
 
