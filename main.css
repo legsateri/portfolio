@@ -229,6 +229,12 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+    .hero {
+        background-image: url("images/lady-lineart.png");
+        background-size: 80%;
+        background-position: right; 
+   }
+    
     .projects {
         padding: 9% 0;
     }
@@ -237,7 +243,6 @@ body {
 /* Styling for larger and larger browsers */
 @media only screen and (min-width: 1200px) {
     .hero {
-        background-image: url("images/lady-lineart.png");
         background-size: 70%;
         background-position: right; 
    }
