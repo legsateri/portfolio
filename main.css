@@ -95,7 +95,6 @@ body {
         margin: 0;
         max-width: 100%;
         background-color: #F2F2F2;
-        height: 568px;
     }
 
     .title {
@@ -115,7 +114,7 @@ body {
         padding-bottom: 3%;
     }
 
-    .project-one {
+    .project-one, .project-two {
         max-width: 300px;
         background-color: white;
         -webkit-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
@@ -149,10 +148,9 @@ body {
     
     .projects {
         padding: 75px 0;
-        height: 700px;
     }
 
-    .project-one {
+    .project-one, .project-two {
         max-width: 450px;
     }
 
@@ -172,7 +170,7 @@ body {
         font-size: 12px;
     }
 
-    .project-one p {
+    .project-one p, .project-two p {
         font-size: 16px;
     }
 
@@ -210,7 +208,7 @@ body {
         padding: 12% 0;
     }
 
-    .project-one p {
+    .project-one p, .project-two p {
         text-align: left;
         padding-left: 20px;
     }
@@ -249,6 +247,11 @@ body {
     
     .projects {
         padding: 5% 0;
+        display: flex;
+    }
+
+    .project-one, .project-two {
+        min-height: 575px;
     }
 
     .bio {
@@ -276,7 +279,7 @@ body {
         height: 40px;
     }
 
-    .project-one p {
+    .project-one p, .project-two p {
         font-size: 20px;
     }
 
