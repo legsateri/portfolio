@@ -91,7 +91,7 @@ body {
     }
 
     .projects {
-        padding: 28% 0;
+        padding: 10% 0;
         margin: 0;
         max-width: 100%;
         background-color: #F2F2F2;
@@ -114,12 +114,17 @@ body {
         padding-bottom: 3%;
     }
 
-    .project-one, .project-two {
+    .project-one, .project-two, .project-three {
         max-width: 300px;
+        margin-top: 30px;
         background-color: white;
         -webkit-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
         -moz-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
         box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
+    }
+
+    .project-two, .project-three {
+        margin-top: 30px;
     }
 
     div p {
@@ -150,7 +155,7 @@ body {
         padding: 75px 0;
     }
 
-    .project-one, .project-two {
+    .project-one, .project-two, .project-three {
         max-width: 450px;
     }
 
@@ -170,7 +175,7 @@ body {
         font-size: 12px;
     }
 
-    .project-one p, .project-two p {
+    .project-one p, .project-two p, .project-three p {
         font-size: 16px;
     }
 
@@ -208,7 +213,7 @@ body {
         padding: 12% 0;
     }
 
-    .project-one p, .project-two p {
+    .project-one p, .project-two p, .project-three p {
         text-align: left;
         padding-left: 20px;
     }
@@ -248,10 +253,15 @@ body {
     .projects {
         padding: 5% 0;
         display: flex;
+        flex-wrap: wrap;
     }
 
-    .project-one, .project-two {
+    .project-one, .project-two, .project-three {
         min-height: 575px;
+    }
+
+    .project-three {
+        margin-top: 60px;
     }
 
     .bio {
@@ -279,7 +289,7 @@ body {
         height: 40px;
     }
 
-    .project-one p, .project-two p {
+    .project-one p, .project-two p, .project-three p {
         font-size: 20px;
     }
 
