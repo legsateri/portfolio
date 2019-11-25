@@ -1,4 +1,5 @@
 /* Styling for every screen size */
+
 * {
     box-sizing: border-box;
     margin-left: auto;
@@ -6,7 +7,7 @@
     scroll-behavior: smooth;
 }
 
-body { 
+body {
     font-family: 'Nunito Sans', sans-serif;
     color: #063443;
     background-color: #F8F8F8;
@@ -15,6 +16,7 @@ body {
 }
 
 /* Styling for smallest screen size */
+
 @media only screen and (min-width: 320px) {
     .bio {
         max-width: 300px;
@@ -26,26 +28,21 @@ body {
         right: 0px;
         padding-top: 200px;
     }
-
     h1 {
         font-family: 'Halant', serif;
         font-size: 24px;
         line-height: 0;
     }
-
     .hide {
         display: none;
     }
-
     p {
         font-size: 15px;
     }
-
     .pronunciation {
         color: #086970;
         font-weight: bold;
     }
-
     nav {
         margin-left: auto;
         margin-right: auto;
@@ -54,93 +51,79 @@ body {
         background-color: #F8F8F8;
         border-top: 3px solid #ECECEC;
     }
-
     ul {
         list-style: none;
         display: flex;
         left: 0px;
         right: 0px;
     }
-
     nav ul {
         padding: 0;
     }
-
     li {
         font-size: 12px;
         text-align: center;
     }
-
     .nav-option {
         margin-top: 10px;
     }
-
     .typewriter {
         height: 30px;
     }
-
     a:link {
         text-decoration: none;
         font-weight: bold;
         color: #541329;
     }
-
     a:visited {
         color: #541329;
         text-decoration: none;
     }
-
     .projects {
         padding: 10% 0;
         margin: 0;
         max-width: 100%;
         background-color: #F2F2F2;
     }
-
     .title {
         line-height: 0px;
         font-weight: bold;
     }
-
     .screenshot {
         max-width: 300px;
         margin-right: auto;
         margin-left: auto;
+        -webkit-box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
+        -moz-box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
+        box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
     }
-
     .repo p {
         font-size: 12px;
         font-weight: bold;
         padding-bottom: 3%;
     }
-
-    .project-one, .project-two, .project-three {
+    .project-one, .project-two, .project-three, .project-four {
         max-width: 300px;
         margin-top: 30px;
         background-color: white;
-        -webkit-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
-        -moz-box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
-        box-shadow: 6px 6px 19px -12px rgba(0,0,0,0.48);
+        -webkit-box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
+        box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
     }
-
-    .project-two, .project-three {
+    .project-two, .project-three, .project-four {
         margin-top: 30px;
     }
-
     div p {
         text-align: center;
     }
-
     footer {
         background-color: #ECECEC;
         padding: 1px 0;
         margin: 0;
     }
-
     footer ul {
         padding: 0;
     }
-    
     .icon {
         height: 20px;
     }
@@ -150,49 +133,41 @@ body {
     .bio {
         max-width: 450px;
     }
-    
     .projects {
         padding: 75px 0;
     }
-
-    .project-one, .project-two, .project-three {
+    .project-one, .project-two, .project-three, .project-four {
         max-width: 450px;
     }
-
     .screenshot {
         max-width: 450px;
     }
-
     h1 {
         font-size: 32px;
     }
-
     .bio p {
         font-size: 16px;
     }
-
     li {
         font-size: 12px;
     }
-
-    .project-one p, .project-two p, .project-three p {
+    .project-one p, .project-two p, .project-three p, .project-four p {
         font-size: 16px;
     }
-
     .repo p {
         font-size: 12px;
     }
 }
 
 /* Styling for tablets and small desktop browsers */
+
 @media only screen and (min-width: 700px) {
-   .hero {
+    .hero {
         background-image: url("images/lady-lineart-2.png");
         background-size: 90%;
         background-repeat: no-repeat;
-        background-position: center; 
-   }
-   
+        background-position: center;
+    }
     .bio {
         height: 475px;
         padding-top: 0px;
@@ -200,28 +175,22 @@ body {
         vertical-align: middle;
         padding-left: 75px;
     }
-    
     h1 {
         text-align: left;
     }
-
     .bio p {
         text-align: left;
     }
-
     .projects {
         padding: 12% 0;
     }
-
-    .project-one p, .project-two p, .project-three p {
+    .project-one p, .project-two p, .project-three p, .project-four p {
         text-align: left;
         padding-left: 20px;
     }
-
     .icon {
         height: 30px;
     }
-
     .hide {
         display: inline;
         padding-left: 5px;
@@ -235,64 +204,53 @@ body {
     .hero {
         background-image: url("images/lady-lineart.png");
         background-size: 75%;
-        background-position: right; 
-   }
-    
+        background-position: right;
+    }
     .projects {
         padding: 9% 0;
     }
 }
 
 /* Styling for larger and larger browsers */
+
 @media only screen and (min-width: 1200px) {
     .hero {
         background-size: 70%;
-        background-position: right; 
-   }
-    
+        background-position: right;
+    }
     .projects {
         padding: 5% 0;
         display: flex;
         flex-wrap: wrap;
     }
-
-    .project-one, .project-two, .project-three {
+    .project-one, .project-two, .project-three, .project-four {
         min-height: 575px;
     }
-
-    .project-three {
+    .project-three, .project-four {
         margin-top: 60px;
     }
-
     .bio {
         max-width: 750px;
     }
-
     .hide {
         padding-left: 8px;
         font-size: 32px;
     }
-
     .bio h1 {
         font-size: 40px;
     }
-
     .bio p {
         font-size: 20px;
     }
-
     li {
         font-size: 16px;
     }
-
     .typewriter {
         height: 40px;
     }
-
-    .project-one p, .project-two p, .project-three p {
+    .project-one p, .project-two p, .project-three p, .project-four p {
         font-size: 20px;
     }
-
     .repo p {
         font-size: 16px;
     }
@@ -301,5 +259,5 @@ body {
 @media only screen and (min-width: 1375px) {
     .hero {
         background-size: 59%;
-   }
+    }
 }
