@@ -15,118 +15,136 @@ body {
     padding: 0;
 }
 
-/* Styling for smallest screen size */
+.bio {
+    max-width: 300px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    display: block;
+    left: 0px;
+    right: 0px;
+    padding-top: 200px;
+}
 
-@media only screen and (min-width: 320px) {
-    .bio {
-        max-width: 300px;
-        height: 500px;
-        text-align: center;
-        position: relative;
-        display: block;
-        left: 0px;
-        right: 0px;
-        padding-top: 200px;
-    }
-    h1 {
-        font-family: 'Halant', serif;
-        font-size: 24px;
-        line-height: 0;
-    }
-    .hide {
-        display: none;
-    }
-    p {
-        font-size: 15px;
-    }
-    .pronunciation {
-        color: #086970;
-        font-weight: bold;
-    }
-    nav {
-        margin-left: auto;
-        margin-right: auto;
-        position: sticky;
-        top: 0;
-        background-color: #F8F8F8;
-        border-top: 3px solid #ECECEC;
-    }
-    ul {
-        list-style: none;
-        display: flex;
-        left: 0px;
-        right: 0px;
-    }
-    nav ul {
-        padding: 0;
-    }
-    li {
-        font-size: 12px;
-        text-align: center;
-    }
-    .nav-option {
-        margin-top: 10px;
-    }
-    .typewriter {
-        height: 30px;
-    }
-    a:link {
-        text-decoration: none;
-        font-weight: bold;
-        color: #541329;
-    }
-    a:visited {
-        color: #541329;
-        text-decoration: none;
-    }
-    .projects {
-        padding: 10% 0;
-        margin: 0;
-        max-width: 100%;
-        background-color: #F2F2F2;
-    }
-    .title {
-        line-height: 0px;
-        font-weight: bold;
-    }
-    .screenshot {
-        max-width: 300px;
-        margin-right: auto;
-        margin-left: auto;
-        -webkit-box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
-        -moz-box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
-        box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
-    }
-    .repo p {
-        font-size: 12px;
-        font-weight: bold;
-        padding-bottom: 3%;
-    }
-    .project-one, .project-two, .project-three, .project-four {
-        max-width: 300px;
-        margin-top: 30px;
-        background-color: white;
-        -webkit-box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
-        -moz-box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
-        box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
-    }
-    .project-two, .project-three, .project-four {
-        margin-top: 30px;
-    }
-    div p {
-        text-align: center;
-    }
-    footer {
-        background-color: #ECECEC;
-        padding: 1px 0;
-        margin: 0;
-    }
-    footer ul {
-        padding: 0;
-    }
-    .icon {
-        height: 20px;
-    }
+h1 {
+    font-family: 'Halant', serif;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+.pronunciation {
+    color: #086970;
+    font-weight: bold;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+    background-color: #F8F8F8;
+    border-top: 3px solid #ECECEC;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    left: 0px;
+    right: 0px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+li {
+    font-size: 12px;
+    text-align: center;
+}
+
+.nav-option {
+    margin-top: 10px;
+}
+
+.typewriter {
+    height: 30px;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #541329;
+}
+
+a:visited {
+    color: #541329;
+    text-decoration: none;
+}
+
+.projects {
+    padding: 10% 0;
+    margin: 0;
+    max-width: 100%;
+    background-color: #F2F2F2;
+}
+
+.title {
+    line-height: 0px;
+    font-weight: bold;
+}
+
+.screenshot {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
+    -moz-box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
+    box-shadow: 4px 14px 14px -12px rgba(211, 211, 211, 1);
+}
+
+.repo p {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.project-one, .project-two, .project-three, .project-four {
+    max-width: 300px;
+    margin-top: 30px;
+    background-color: white;
+    -webkit-box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
+    box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
+}
+
+.project-two, .project-three, .project-four {
+    margin-top: 30px;
+}
+
+div p {
+    text-align: center;
+}
+
+footer {
+    background-color: #ECECEC;
+    padding: 1px 0;
+    margin: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+.icon {
+    height: 20px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -187,6 +205,7 @@ body {
     .project-one p, .project-two p, .project-three p, .project-four p {
         text-align: left;
         padding-left: 20px;
+        padding-right: 20px;
     }
     .icon {
         height: 30px;
@@ -197,6 +216,9 @@ body {
         font-size: 26px;
         color: #086970;
         font-weight: bold;
+    }
+    a:hover {
+        color: #086970;
     }
 }
 
@@ -259,5 +281,17 @@ body {
 @media only screen and (min-width: 1375px) {
     .hero {
         background-size: 59%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .project-three {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .project-four {
+        margin-top: 30px;
     }
 }
