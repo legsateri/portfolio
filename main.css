@@ -116,7 +116,7 @@ a:visited {
     padding-bottom: 3%;
 }
 
-.project-one, .project-two, .project-three, .project-four {
+.project-one, .project-two, .project-three {
     max-width: 300px;
     margin-top: 30px;
     background-color: white;
@@ -125,7 +125,7 @@ a:visited {
     box-shadow: 6px 6px 19px -12px rgba(0, 0, 0, 0.48);
 }
 
-.project-two, .project-three, .project-four {
+.project-two, .project-three {
     margin-top: 30px;
 }
 
@@ -154,7 +154,7 @@ footer ul {
     .projects {
         padding: 75px 0;
     }
-    .project-one, .project-two, .project-three, .project-four {
+    .project-one, .project-two, .project-three {
         max-width: 450px;
     }
     .screenshot {
@@ -169,7 +169,7 @@ footer ul {
     li {
         font-size: 12px;
     }
-    .project-one p, .project-two p, .project-three p, .project-four p {
+    .project-one p, .project-two p, .project-three p {
         font-size: 16px;
     }
     .repo p {
@@ -202,7 +202,7 @@ footer ul {
     .projects {
         padding: 12% 0;
     }
-    .project-one p, .project-two p, .project-three p, .project-four p {
+    .project-one p, .project-two p, .project-three p {
         text-align: left;
         padding-left: 20px;
         padding-right: 20px;
@@ -245,10 +245,10 @@ footer ul {
         display: flex;
         flex-wrap: wrap;
     }
-    .project-one, .project-two, .project-three, .project-four {
+    .project-one, .project-two, .project-three {
         min-height: 575px;
     }
-    .project-three, .project-four {
+    .project-three {
         margin-top: 60px;
     }
     .bio {
@@ -270,7 +270,7 @@ footer ul {
     .typewriter {
         height: 40px;
     }
-    .project-one p, .project-two p, .project-three p, .project-four p {
+    .project-one p, .project-two p, .project-three p {
         font-size: 20px;
     }
     .repo p {
@@ -286,12 +286,6 @@ footer ul {
 
 @media only screen and (min-width: 1400px) {
     .project-three {
-        margin-top: 30px;
-    }
-}
-
-@media only screen and (min-width: 1800px) {
-    .project-four {
         margin-top: 30px;
     }
 }
